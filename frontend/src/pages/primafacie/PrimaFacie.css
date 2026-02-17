@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Gruppo&family=Aguafina+Script&family=Siemreap&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base Container */
+.prima-facie-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prima-facie-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar Hide - Only for Prima Facie page */
+.prima-facie-container ::-webkit-scrollbar {
+  display: none;
+}
+
+.prima-facie-container * {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.prima-facie-container .header-fixed {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 1440px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.prima-facie-container .header-fixed.hidden {
+  transform: translate(-50%, -100%);
+}
+
+.prima-facie-container .header-panel {
+  width: 100%;
+  height: 70px;
+  background: #000;
+  border-bottom: 1px solid #A6A6A6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  will-change: scroll-position;
+}
+
+.prima-facie-container .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.prima-facie-container .logo-box {
+  width: 32px;
+  height: 34px;
+  border-radius: 3px;
+  background: linear-gradient(0deg, #000309 0%, #000309 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prima-facie-container .logo-letter {
+  font-family: 'Aguafina Script', cursive;
+  font-size: 32px;
+  color: #FFF;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.prima-facie-container .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.prima-facie-container .brand-name {
+  color: #FFF;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.prima-facie-container .gruppo {
+  font-family: 'Gruppo', cursive;
+}
+
+.prima-facie-container .bruno {
+  font-family: 'Bruno Ace', cursive;
+}
+
+.prima-facie-container .tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 17px;
+}
+
+.prima-facie-container .page-title {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 27.5px;
+  position: absolute;
+  left: 153px;
+  top: 12px;
+}
+
+.prima-facie-container .page-subtitle {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9BA4B1;
+  line-height: 27.5px;
+  position: absolute;
+  left: 153px;
+  top: 36px;
+}
+
+.prima-facie-container .user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prima-facie-container .user-info {
+  text-align: right;
+}
+
+.prima-facie-container .user-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFF;
+  line-height: 14px;
+}
+
+.prima-facie-container .user-plan {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 14px;
+}
+
+.prima-facie-container .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #155DFC 0%, #0D3796 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prima-facie-container .user-avatar::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+}
+
+.prima-facie-container .avatar-letter {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+.prima-facie-container .notification-bell {
+  cursor: pointer;
+  margin-left: 14px;
+}
+
+
+.prima-facie-container .prima-facie-content {
+  padding: 100px 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.prima-facie-container .section-header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 18px;
+}
+
+.prima-facie-container .section-chevron {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.prima-facie-container .section-header {
+  flex: 1;
+}
+
+.prima-facie-container .section-title {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 27.5px;
+  margin: 0 0 -5px 0;
+}
+
+.prima-facie-container .section-subtitle {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9BA4B1;
+  line-height: 27.5px;
+  margin: 0;
+}
+
+/* Case Details Section */
+.prima-facie-container .case-details-section {
+  margin-bottom: 62px;
+  margin-left: 0;
+}
+
+.prima-facie-container .case-description-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.prima-facie-container .case-description-input {
+  width: 100%;
+  height: 384px;
+  border-radius: 8px;
+  border: 1px solid #45556C;
+  background: #FFF;
+  padding: 23px 29px 60px 29px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #314158;
+  line-height: 27.5px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.prima-facie-container .case-description-input::placeholder {
+  color: #314158;
+  opacity: 1;
+}
+
+.prima-facie-container .case-description-input:focus {
+  outline: none;
+  border-color: #45556C;
+}
+
+.prima-facie-container .textarea-actions {
+  position: absolute;
+  bottom: 15px;
+  left: 29px;
+  right: 29px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.prima-facie-container .file-upload-input {
+  display: none;
+}
+
+.prima-facie-container .file-upload-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.prima-facie-container .mic-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.prima-facie-container .uploaded-files-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  max-width: 1050px;
+}
+
+.prima-facie-container .file-chip {
+  background: #F5F5F5;
+  padding: 6px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #D0D0D0;
+}
+
+.prima-facie-container .file-chip-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #314158;
+  font-weight: 500;
+}
+
+.prima-facie-container .file-chip-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+/* Action Buttons */
+.prima-facie-container .action-buttons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 45px;
+  margin-left: 0;
+}
+
+.prima-facie-container .action-buttons button {
+  height: 34px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+}
+
+.prima-facie-container .action-buttons button svg {
+  stroke: currentColor;
+}
+
+.prima-facie-container .btn-back {
+  width: 77px;
+  background: #000;
+  border: none;
+  color: #FFF;
+}
+
+.prima-facie-container .btn-save-draft {
+  width: 120px;
+  background: #000;
+  border: 1px solid #FFF;
+  color: #FFF;
+  margin-left: auto;
+}
+
+.prima-facie-container .btn-analyze {
+  width: 141px;
+  background: #000;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+/* Delete Modal */
+.prima-facie-container .delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.prima-facie-container .delete-modal {
+  background: #000;
+  border: 1px solid #A6A6A6;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.prima-facie-container .delete-modal-title {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.prima-facie-container .delete-modal-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #9BA4B1;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.prima-facie-container .delete-modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.prima-facie-container .btn-cancel {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background: #000;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.prima-facie-container .btn-delete {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #FF4444;
+  background: #FF4444;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.prima-facie-container .footer-gradient {
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(90deg, #555 0%, #222 50%, #555 100%);
+  margin-top: auto;
+}
+
+
+@media (max-width: 1024px) {
+  .prima-facie-container .user-info {
+    display: none;
+  }
+  
+  .prima-facie-container .user-avatar {
+    display: none;
+  }
+  
+  .prima-facie-container .notification-bell {
+    display: none;
+  }
+}

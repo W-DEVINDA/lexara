@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Gruppo&family=Aguafina+Script&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.homepage {
+  width: 1440px;
+  height: 100vh;
+  background: #0F172B;
+  overflow: hidden;
+  position: relative;
+}
+
+.top-panel {
+  width: 100%;
+  height: 70px;
+  background: #1D293D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 230px;
+  margin-right: 0;
+}
+
+.logo-box {
+  width: 32px;
+  height: 34px;
+  border-radius: 3px;
+  background: linear-gradient(0deg, #000309 0%, #000309 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-letter {
+  font-family: 'Aguafina Script', cursive;
+  font-size: 32px;
+  color: #FFF;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  color: #FFF;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.gruppo {
+  font-family: 'Gruppo', cursive;
+}
+
+.bruno {
+  font-family: 'Bruno Ace', cursive;
+}
+
+.tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 17px;
+}
+
+.search-container {
+  width: calc(1365px - 230px - 282px - 40px);
+  margin-right: 80px;
+  height: 33px;
+  border-radius: 11px;
+  background: #FBFBFB;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.search-icon {
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #314158;
+  opacity: 0.65;
+}
+
+.search-input::placeholder {
+  color: #314158;
+  opacity: 0.65;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  justify-content: flex-end;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  line-height: 14px;
+}
+
+.user-plan {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 14px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #155DFC 0%, #0D3796 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.user-avatar::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+}
+
+.avatar-letter {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+.notification-bell {
+  flex-shrink: 0;
+}
+
+.main-content {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+@media (max-width: 1152px) {
+  .search-container {
+    display: none;
+  }
+  
+  .homepage {
+    width: 100%;
+  }
+  
+  .user-section {
+    width: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .top-panel {
+    height: auto;
+    min-height: 60px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+  }
+  
+  .logo-section {
+    width: auto;
+    margin-right: 0;
+  }
+  
+
+  .search-container {
+    display: none;
+  }
+  
+
+  .user-section {
+    display: none;
+  }
+  
+  .main-content {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 14px;
+  }
+  
+  .tagline {
+    font-size: 8px;
+  }
+  
+  .search-input {
+    font-size: 14px;
+  }
+}

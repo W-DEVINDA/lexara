@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.mb-message {
+  display: flex;
+  gap: 17px;
+  animation: mb-fadeIn 0.3s ease-in;
+}
+
+@keyframes mb-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mb-user-message {
+  justify-content: flex-end;
+}
+
+.mb-message-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.mb-message-avatar span {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.mb-lexara-message:first-child .mb-message-avatar {
+  box-shadow: none;
+}
+
+.mb-message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.mb-user-message .mb-message-content {
+  align-items: flex-end;
+}
+
+.mb-message-sender {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  line-height: 18px;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.mb-message:hover .mb-message-sender {
+  opacity: 1;
+}
+
+.mb-message-bubble {
+  max-width: min(422px, 85vw);
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.mb-message:hover .mb-message-bubble {
+  transform: translateY(-2px);
+}
+
+.mb-lexara-bubble {
+  border-radius: 0 8px 8px 8px;
+  background: #000;
+  color: #FFF;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.mb-lexara-message:hover .mb-lexara-bubble {
+  box-shadow: none;
+}
+
+.mb-lexara-message:first-child .mb-message-bubble {
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+  box-shadow: none;
+}
+
+@keyframes mb-initialGlow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.mb-lexara-message:first-child .mb-message-bubble {
+  animation: mb-initialGlow 2s ease-out 1s;
+}
+
+.mb-user-bubble {
+  border-radius: 8px 0 8px 8px;
+  border: 1px solid #000;
+  background: #FFF;
+  color: #000;
+}

@@ -1,0 +1,123 @@
+/* Progress Rings Section */
+.progress-rings-section {
+  width: 100%;
+  max-width: 1287px;
+  margin-top: 20px;
+}
+
+.progress-rings-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.progress-rings-header svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.progress-rings-title {
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.375;
+  margin: 0;
+}
+
+.progress-rings-label {
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.96;
+  margin-left: 40px;
+  margin-bottom: 70px;
+}
+
+.metrics-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.circular-progress {
+  position: relative;
+  width: 154px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-blur {
+  position: absolute;
+  filter: blur(30.2px);
+  opacity: 1.5;
+}
+
+.progress-ring {
+  position: absolute;
+}
+
+.progress-value {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.15;
+  text-shadow: 0 4px 52.4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.metric-title {
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.72;
+  margin: 0;
+  text-align: center;
+}
+
+.metric-description {
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 12.39px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 220px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .metrics-container {
+    flex-direction: column !important;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .metric-item {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-rings-section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}

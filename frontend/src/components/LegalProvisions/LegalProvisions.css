@@ -1,0 +1,204 @@
+/* Legal Provisions Section */
+.legal-provisions-section {
+  width: 100%;
+  max-width: 1287px;
+  margin-top: 52px;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.provision-card {
+  width: 100%;
+  background: #F3F4F6;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 24px 32px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.provision-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.provision-header svg {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  min-height: 24px !important;
+  margin-top: 3px;
+  flex-shrink: 0;
+  display: block !important;
+  color: black !important;
+}
+
+.provision-header svg path,
+.provision-header svg line,
+.provision-header svg circle,
+.provision-header svg rect,
+.provision-header svg ellipse,
+.provision-header svg polyline,
+.provision-header svg polygon {
+  stroke: #111827 !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+}
+
+.provision-info {
+  flex: 1;
+}
+
+.provision-code {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6B7280;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.02em;
+}
+
+.provision-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.provision-badge {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  padding: 6px 12px;
+  border-radius: 4.8px;
+  background: #111827;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  min-width: 120px;
+  text-align: center;
+}
+
+.provision-badge.badge-primary {
+  background: #FFD400;
+  color: #ffffff;
+}
+
+.provision-badge.badge-critical {
+  background: #d10000;
+  color: #FFF;
+}
+
+.provision-badge.badge-very-strong {
+  background: #008b0c;
+  color: #FFF;
+}
+
+.provision-summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4B5563;
+  line-height: 1.6;
+  margin: 0 0 14px 0;
+  margin-left: 36px;
+}
+
+.toggle-details {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  line-height: 1.4;
+  padding: 0;
+  margin-bottom: 14px;
+  margin-left: 25px;
+  transition: color 0.2s ease;
+}
+
+.toggle-details:hover {
+  color: #111827;
+}
+
+.toggle-details svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transform: translateY(2px);
+  transition: transform 0.3s ease;
+}
+
+.chevron-down {
+  transform: translateY(2px) rotate(0deg);
+}
+
+.chevron-up {
+  transform: translateY(2px) rotate(180deg);
+}
+
+.provision-details {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4B5563;
+  line-height: 1.7;
+  text-align: justify;
+  margin: 0;
+  margin-left: 36px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .provision-card {
+    padding: 20px;
+  }
+  
+  .provision-badge {
+    position: static;
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+  
+  .provision-summary,
+  .provision-details {
+    margin-left: 0;
+  }
+  
+  .toggle-details {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-provisions-section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}

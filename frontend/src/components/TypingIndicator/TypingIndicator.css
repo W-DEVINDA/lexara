@@ -1,0 +1,32 @@
+.ti-typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.ti-typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #FFF;
+  animation: ti-typing 1.4s infinite;
+}
+
+.ti-typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ti-typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes ti-typing {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}

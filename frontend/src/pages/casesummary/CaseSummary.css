@@ -1,0 +1,1161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Gruppo&family=Aguafina+Script&family=Inter:wght@400;500;600;700&family=Siemreap&display=swap');
+
+
+.cs-case-summary-page * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cs-case-summary-page {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  background: #000;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cs-case-summary-page::-webkit-scrollbar {
+  display: none;
+}
+
+.cs-case-summary-page {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Header Section */
+.cs-case-summary-page .cs-header-case-analysis {
+  width: 100%;
+  max-width: 1440px;
+  height: 70px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  background: #000;
+}
+
+.cs-case-summary-page .cs-header-case-analysis.cs-header-hidden {
+  transform: translate(-50%, -100%);
+}
+
+.cs-case-summary-page .cs-top-panel {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #A6A6A6;
+  background: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.cs-case-summary-page .cs-logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.cs-case-summary-page .cs-logo-box {
+  width: 32px;
+  height: 34px;
+  border-radius: 3px;
+  background: linear-gradient(0deg, #000309 0%, #000309 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cs-case-summary-page .cs-logo-letter {
+  font-family: 'Aguafina Script', cursive;
+  font-size: 32px;
+  color: #FFF;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.cs-case-summary-page .cs-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.cs-case-summary-page .cs-brand-name {
+  color: #FFF;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.cs-case-summary-page .cs-gruppo {
+  font-family: 'Gruppo', cursive;
+  font-weight: 400;
+}
+
+.cs-case-summary-page .cs-bruno {
+  font-family: 'Bruno Ace', cursive;
+  font-weight: 400;
+}
+
+.cs-case-summary-page .cs-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 17px;
+}
+
+.cs-case-summary-page .cs-page-title-section {
+  position: absolute;
+  left: 153px;
+  top: 12px;
+}
+
+.cs-case-summary-page .cs-page-title {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 27.5px;
+  margin: 0;
+}
+
+.cs-case-summary-page .cs-page-subtitle {
+  font-family: 'Siemreap', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #9BA4B1;
+  line-height: 27.5px;
+  margin: 0;
+  position: relative;
+  top: -3px;
+}
+
+.cs-case-summary-page .cs-user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cs-case-summary-page .cs-user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cs-case-summary-page .cs-user-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FFF;
+  line-height: 14px;
+}
+
+.cs-case-summary-page .cs-user-plan {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(178, 189, 203, 0.87);
+  line-height: 14px;
+}
+
+.cs-case-summary-page .cs-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #155DFC 0%, #0D3796 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cs-case-summary-page .cs-user-avatar::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  top: 2px;
+  left: 2px;
+}
+
+.cs-case-summary-page .cs-avatar-letter {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main Content - Matched to History Page Width */
+.cs-case-summary-page .cs-main-content {
+  padding: 0 40px;
+  max-width: 1220px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Section Styles */
+.cs-case-summary-page .cs-section {
+  margin-bottom: 64px;
+}
+
+.cs-case-summary-page .cs-section:first-child {
+  margin-top: 31px;
+}
+
+.cs-case-summary-page .cs-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.cs-case-summary-page .cs-expand-icon {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.cs-case-summary-page .cs-section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* White Cards */
+.cs-case-summary-page .cs-white-card {
+  background: #FFF;
+  border-radius: 6px;
+  padding: 17px 24px;
+  color: #000;
+}
+
+/* Court Progress Section */
+.cs-case-summary-page .cs-stage-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.cs-case-summary-page .cs-progress-content {
+  margin-bottom: 12px;
+}
+
+.cs-case-summary-page .cs-content-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.cs-case-summary-page .cs-content-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+  opacity: 0.65;
+}
+
+.cs-case-summary-page .cs-next-event {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cs-case-summary-page .cs-event-bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #000;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.cs-case-summary-page .cs-event-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.4;
+  margin: 0;
+  opacity: 0.65;
+}
+
+/* Info Cards Grid */
+.cs-case-summary-page .cs-info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.cs-case-summary-page .cs-info-card {
+  background: #000;
+  border: 1px solid #B0B0B0;
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.cs-case-summary-page .cs-card-header {
+  background: #FFF;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.cs-case-summary-page .cs-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cs-case-summary-page .cs-card-body {
+  padding: 17px 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.7;
+}
+
+.cs-case-summary-page .cs-card-body p {
+  margin: 0 0 8px 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 400;
+}
+
+.cs-case-summary-page .cs-card-body strong {
+  font-weight: 700;
+  color: #FFF;
+}
+
+.cs-case-summary-page .cs-defendant-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 15px 0 8px 0;
+  line-height: 1.4;
+  opacity: 1;
+}
+
+/* Key Facts Section */
+.cs-case-summary-page .cs-key-facts .cs-section-title {
+  margin-bottom: 28px;
+}
+
+.cs-case-summary-page .cs-fact-item {
+  margin-bottom: 12px;
+}
+
+.cs-case-summary-page .cs-fact-item:last-child {
+  margin-bottom: 0;
+}
+
+.cs-case-summary-page .cs-fact-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.cs-case-summary-page .cs-fact-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1.7;
+  margin: 0 0 12px 0;
+  opacity: 0.65;
+}
+
+/* Case Evidence Section */
+.cs-case-summary-page .cs-evidence .cs-section-title {
+  margin-bottom: 28px;
+}
+
+.cs-case-summary-page .cs-evidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  line-height: 2;
+}
+
+.cs-case-summary-page .cs-evidence-list li {
+  margin-bottom: 8px;
+}
+
+.cs-case-summary-page .cs-evidence-list a {
+  color: #000;
+  text-decoration: underline;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.cs-case-summary-page .cs-evidence-list a:hover {
+  opacity: 0.9;
+}
+
+/* Legal Precedents Section */
+.cs-case-summary-page .cs-precedents-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.cs-case-summary-page .cs-carousel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.cs-case-summary-page .cs-carousel-btn:hover {
+  opacity: 0.7;
+}
+
+.cs-case-summary-page .cs-precedents {
+  position: relative;
+}
+
+.cs-case-summary-page .cs-precedents-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.cs-case-summary-page .cs-precedents-grid {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.cs-case-summary-page .cs-precedents .cs-carousel-btn-right {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.cs-case-summary-page .cs-precedents .cs-carousel-btn-left {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.cs-case-summary-page .cs-precedent-card {
+  background: #FFF;
+  border: 1px solid #B0B0B0;
+  border-radius: 6px;
+  padding: 30px 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 270px;
+  flex: 0 0 calc((1220px - 80px - 60px) / 3);
+  width: calc((1220px - 80px - 60px) / 3);
+}
+.cs-case-summary-page .cs-precedent-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cs-case-summary-page .cs-precedent-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0 0 25px 0;
+  flex: 1;
+  opacity: 0.65;
+}
+
+.cs-case-summary-page .cs-view-btn {
+  width: 180px;
+  height: 53px;
+  border-radius: 4px;
+  background: #000;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  transition: background 0.2s ease;
+}
+
+.cs-case-summary-page .cs-view-btn:hover {
+  background: #333;
+}
+
+/* Relevant Cases Section */
+.cs-case-summary-page .cs-cases-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.cs-case-summary-page .cs-carousel-btn-dark svg path {
+  stroke: #000;
+}
+
+.cs-case-summary-page .cs-cases-container {
+  background: linear-gradient(180deg, #9B9A9A 0%, #FFF 100%);
+  border-radius: 6px;
+  padding: 50px 30px;
+}
+
+.cs-case-summary-page .cs-cases-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cs-case-summary-page .cs-cases-grid {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.cs-case-summary-page .cs-relevant-cases {
+  position: relative;
+}
+.cs-case-summary-page .cs-carousel-btn-cases-right {
+  position: absolute;
+  right: -40px;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.cs-case-summary-page .cs-carousel-btn-cases-left {
+  position: absolute;
+  left: -40px;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.cs-case-summary-page .cs-case-card {
+  background: #000;
+  border-radius: 6px;
+  padding: 30px 25px;
+  position: relative;
+  min-height: 270px;
+  border: 1px solid #B0B0B0;
+  flex: 0 0 calc((1220px - 80px - 60px - 40px) / 2);
+  width: calc((1220px - 80px - 60px - 40px) / 2);
+}
+
+.cs-case-summary-page .cs-external-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 2px;
+}
+
+.cs-case-summary-page .cs-case-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 50px 0 15px 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.cs-case-summary-page .cs-case-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF;
+  text-align: center;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0.65;
+}
+
+/* Bottom Buttons */
+.cs-case-summary-page .cs-bottom-buttons {
+  padding: 0;
+  max-width: 1220px;
+  height: 34px;
+  margin: 15px auto 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cs-case-summary-page .cs-back-btn {
+  width: 76px;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cs-case-summary-page .cs-back-btn:hover {
+  background: #FFF;
+}
+
+.cs-case-summary-page .cs-back-btn:hover svg path {
+  stroke: #000;
+}
+
+.cs-case-summary-page .cs-back-btn span {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1;
+}
+
+.cs-case-summary-page .cs-back-btn:hover span {
+  color: #000;
+}
+
+/* Bottom Gradient */
+.cs-case-summary-page .cs-bottom-gradient {
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(90deg, #555 0%, #222 50%, #555 100%);
+  margin-top: 30px;
+}
+/* Evidence Modal */
+.cs-case-summary-page .cs-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.cs-case-summary-page .cs-modal-content {
+  background: #FFF;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1150px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+.cs-case-summary-page .cs-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+}
+
+.cs-case-summary-page .cs-modal-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 0;
+  line-height: 1.4;
+  padding-right: 20px;
+}
+
+.cs-case-summary-page .cs-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+}
+
+.cs-case-summary-page .cs-modal-close:hover {
+  opacity: 0.7;
+}
+
+.cs-case-summary-page .cs-modal-body {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.cs-case-summary-page .cs-modal-body p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+.cs-case-summary-page .cs-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cs-case-summary-page .cs-modal-btn {
+  padding: 10px 24px;
+  background: #000;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cs-case-summary-page .cs-modal-btn:hover {
+  background: #333;
+}
+/* Court Progress Skeleton */
+.cs-case-summary-page .cs-court-progress-skeleton {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.cs-case-summary-page .cs-skeleton {
+  background: linear-gradient(90deg, #D1D5DB 25%, #E5E7EB 50%, #D1D5DB 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.cs-case-summary-page .cs-skeleton-card {
+  background: #FFF;
+  border-radius: 6px;
+  padding: 17px 24px;
+  margin-bottom: 60px;
+}
+
+.cs-case-summary-page .cs-skeleton-title {
+  height: 24px;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.cs-case-summary-page .cs-skeleton-section {
+  margin-bottom: 20px;
+}
+
+.cs-case-summary-page .cs-skeleton-heading {
+  height: 20px;
+  width: 40%;
+  margin-bottom: 12px;
+}
+
+.cs-case-summary-page .cs-skeleton-line {
+  height: 16px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.cs-case-summary-page .cs-skeleton-line-short {
+  width: 70%;
+}
+
+.cs-case-summary-page .cs-skeleton-event {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.cs-case-summary-page .cs-skeleton-bullet {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.cs-case-summary-page .cs-skeleton-event-text {
+  flex: 1;
+}
+
+.cs-case-summary-page .cs-skeleton-event-heading {
+  height: 20px;
+  width: 50%;
+  margin-bottom: 8px;
+}
+
+.cs-case-summary-page .cs-skeleton-event-date {
+  height: 16px;
+  width: 70%;
+}
+
+.cs-case-summary-page .cs-skeleton-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.cs-case-summary-page .cs-skeleton-info-card {
+  background: #000;
+  border: 1px solid #B0B0B0;
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.cs-case-summary-page .cs-skeleton-card-header {
+  background: #FFF;
+  height: 40px;
+  margin-bottom: 17px;
+}
+
+.cs-case-summary-page .cs-skeleton-card-content {
+  padding: 0 24px 17px 24px;
+}
+
+.cs-case-summary-page .cs-skeleton-text-line {
+  height: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #444 25%, #555 50%, #444 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s infinite;
+}
+
+.cs-case-summary-page .cs-skeleton-text-short {
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+  .cs-case-summary-page .cs-main-content {
+    padding: 0 40px;
+  }
+
+
+  .cs-case-summary-page .cs-info-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cs-case-summary-page .cs-skeleton-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cs-case-summary-page .cs-precedent-card {
+    flex: 0 0 340px;
+    width: 340px;
+  }
+
+
+  .cs-case-summary-page .cs-case-card {
+    flex: 0 0 500px;
+    width: 500px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .cs-case-summary-page .cs-page-title-section {
+    display: none;
+  }
+
+  .cs-case-summary-page .cs-user-info {
+    display: none;
+  }
+
+  .cs-case-summary-page .cs-user-avatar {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  
+  .cs-case-summary-page .cs-header-case-analysis {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .cs-case-summary-page .cs-header-case-analysis:not(.cs-header-hidden) {
+    transform: translateY(0) !important;
+  }
+
+  .cs-case-summary-page .cs-header-case-analysis.cs-header-hidden {
+    transform: translateY(-100%) !important;
+  }
+
+  .cs-case-summary-page .cs-main-content {
+    padding: 0 20px;
+  }
+
+  /* Section titles */
+  .cs-case-summary-page .cs-section-title {
+    font-size: 18px;
+  }
+
+  .cs-case-summary-page .cs-stage-title {
+    font-size: 14px;
+  }
+
+  /* White cards */
+  .cs-case-summary-page .cs-white-card {
+    padding: 15px 16px;
+  }
+
+  /* Content text */
+  .cs-case-summary-page .cs-content-text,
+  .cs-case-summary-page .cs-fact-text,
+  .cs-case-summary-page .cs-event-date,
+  .cs-case-summary-page .cs-evidence-list {
+    font-size: 14px;
+  }
+
+  .cs-case-summary-page .cs-content-heading,
+  .cs-case-summary-page .cs-fact-heading {
+    font-size: 14px;
+  }
+
+  /* Info cards grid */
+  .cs-case-summary-page .cs-info-cards-grid {
+    gap: 16px;
+  }
+
+  .cs-case-summary-page .cs-card-body {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .cs-case-summary-page .cs-card-title {
+    font-size: 14px;
+  }
+
+  /* Precedent cards */
+  .cs-case-summary-page .cs-precedent-card {
+    flex: 0 0 260px;
+    width: 260px;
+    padding: 20px 16px;
+    min-height: unset;
+  }
+
+  .cs-case-summary-page .cs-precedent-title,
+  .cs-case-summary-page .cs-precedent-desc {
+    font-size: 14px;
+  }
+
+  .cs-case-summary-page .cs-view-btn {
+    width: 150px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+ 
+  .cs-case-summary-page .cs-precedents .cs-carousel-btn-right {
+    right: -10px;
+  }
+
+  .cs-case-summary-page .cs-precedents .cs-carousel-btn-left {
+    left: -10px;
+  }
+
+  .cs-case-summary-page .cs-carousel-btn-cases-right {
+    right: -10px;
+  }
+
+  .cs-case-summary-page .cs-carousel-btn-cases-left {
+    left: -10px;
+  }
+
+ 
+  .cs-case-summary-page .cs-case-card {
+    flex: 0 0 280px;
+    width: 280px;
+    padding: 20px 16px;
+    min-height: unset;
+  }
+
+  .cs-case-summary-page .cs-case-title,
+  .cs-case-summary-page .cs-case-desc {
+    font-size: 14px;
+  }
+
+  .cs-case-summary-page .cs-cases-container {
+    padding: 30px 16px;
+  }
+
+  
+  .cs-case-summary-page .cs-evidence-list li {
+    line-height: 1.8;
+  }
+
+
+  .cs-case-summary-page .cs-modal-title {
+    font-size: 15px;
+  }
+
+  .cs-case-summary-page .cs-modal-body p {
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cs-case-summary-page {
+    padding-top: 70px;
+  }
+
+  .cs-case-summary-page .cs-header-case-analysis {
+    height: 60px;
+  }
+
+  .cs-case-summary-page .cs-top-panel {
+    height: 60px;
+  }
+
+  .cs-case-summary-page .cs-main-content {
+    padding: 0 12px;
+  }
+
+  .cs-case-summary-page .cs-section-title {
+    font-size: 16px;
+  }
+
+  .cs-case-summary-page .cs-white-card {
+    padding: 12px;
+  }
+
+  .cs-case-summary-page .cs-content-text,
+  .cs-case-summary-page .cs-fact-text,
+  .cs-case-summary-page .cs-evidence-list {
+    font-size: 13px;
+  }
+
+
+  .cs-case-summary-page .cs-precedent-card {
+    flex: 0 0 220px;
+    width: 220px;
+  }
+
+
+  .cs-case-summary-page .cs-case-card {
+    flex: 0 0 240px;
+    width: 240px;
+  }
+
+ 
+  .cs-case-summary-page .cs-skeleton-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+
+  .cs-case-summary-page .cs-modal-content {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .cs-case-summary-page .cs-modal-title {
+    font-size: 14px;
+  }
+
+  .cs-case-summary-page .cs-modal-body p {
+    font-size: 12px;
+  }
+
+  .cs-case-summary-page .cs-card-body {
+    font-size: 13px;
+    padding: 12px;
+  }
+}

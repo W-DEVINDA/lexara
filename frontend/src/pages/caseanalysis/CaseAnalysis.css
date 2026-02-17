@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Gruppo&family=Aguafina+Script&family=Inter:wght@300;400;500;600&family=Siemreap&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.case-analysis {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background: #000;
+  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.case-analysis::-webkit-scrollbar {
+  display: none;
+}
+
+.case-analysis * {
+  max-width: 100%;
+}
+
+/* Header with Hide/Show Animation */
+.case-analysis .header {
+  width: 100%;
+  max-width: 1440px;
+  height: 70px;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.case-analysis .header-visible {
+  transform: translate(-50%, 0);
+}
+
+.case-analysis .header-hidden {
+  transform: translate(-50%, -100%);
+}
+
+.case-analysis .top-panel {
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+.case-analysis .panel-background {
+  width: 100%;
+  height: 70px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #A6A6A6;
+}
+
+/* Logo Section */
+.case-analysis .logo-container {
+  position: absolute;
+  left: 19px;
+  top: 18px;
+}
+
+.case-analysis .logo-box {
+  width: 32px;
+  height: 34px;
+  border-radius: 3px;
+  background: linear-gradient(0deg, #000309 0%, #000309 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.case-analysis .logo-letter {
+  color: #FFF;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 10px;
+  top: 9px;
+}
+
+/* Brand Name */
+.case-analysis .brand-name {
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27.5px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 57px;
+  top: 12px;
+}
+
+.case-analysis .brand-le {
+  font-family: 'Gruppo', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.case-analysis .brand-x {
+  font-family: 'Bruno Ace', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.case-analysis .brand-ara {
+  font-family: 'Gruppo', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.case-analysis .tagline {
+  color: rgba(178, 189, 203, 0.87);
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 27.5px;
+  position: absolute;
+  left: 58px;
+  top: 33px;
+}
+
+/* Page Title */
+.case-analysis .page-title {
+  color: #FFF;
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.5px;
+  position: absolute;
+  left: 153px;
+  top: 18px;
+}
+
+.case-analysis .page-subtitle {
+  color: #9BA4B1;
+  font-family: 'Siemreap', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 27.5px;
+  position: absolute;
+  left: 153px;
+  top: 37px;
+}
+
+/* User Section */
+.case-analysis .user-section {
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.case-analysis .user-name {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 2px;
+  padding-right: 50px;
+}
+
+.case-analysis .user-plan {
+  color: rgba(178, 189, 203, 0.87);
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-right: 50px;
+}
+
+.case-analysis .user-avatar-gradient {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.case-analysis .user-avatar-white {
+  position: absolute;
+  right: -1px;
+  top: -2px;
+}
+
+.case-analysis .user-initial {
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.5px;
+  position: absolute;
+  right: 9px;
+  top: 0;
+}
+
+/* Main Content */
+.case-analysis .main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 85px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Case Analysis Navigation Buttons */
+.case-analysis .case-analysis-nav {
+  width: 100%;
+  max-width: 1200px;
+  height: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto 0;
+  padding: 0 0 60px 0;
+}
+
+.case-analysis .case-analysis-btn-back,
+.case-analysis .case-analysis-btn-next {
+  height: 34px;
+  border-radius: 4px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0 16px;
+}
+
+.case-analysis .case-analysis-btn-back {
+  min-width: 77px;
+  border: none;
+}
+
+.case-analysis .case-analysis-btn-next {
+  min-width: 76px;
+  border: 1px solid #FFF;
+}
+
+.case-analysis .case-analysis-btn-back:hover,
+.case-analysis .case-analysis-btn-next:hover {
+  background: #FFF;
+  border-color: #000;
+}
+
+.case-analysis .case-analysis-btn-back:hover span,
+.case-analysis .case-analysis-btn-next:hover span {
+  color: #000;
+}
+
+.case-analysis .case-analysis-btn-back:hover svg path,
+.case-analysis .case-analysis-btn-next:hover svg path {
+  stroke: #000;
+}
+
+.case-analysis .case-analysis-btn-back span,
+.case-analysis .case-analysis-btn-next span {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.case-analysis .case-analysis-btn-back svg,
+.case-analysis .case-analysis-btn-next svg {
+  flex-shrink: 0;
+  transition: stroke 0.2s ease;
+}
+
+.case-analysis .case-analysis-btn-back svg {
+  width: 18px;
+  height: 19px;
+}
+
+.case-analysis .case-analysis-btn-next svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1440px) {
+  .case-analysis .main-content {
+    padding: 85px 20px 0 20px;
+  }
+}
+
+/* Tablet and below - Hide user section */
+@media (max-width: 1024px) {
+  .case-analysis .user-section {
+    display: none;
+  }
+  
+  .case-analysis .page-title {
+    max-width: 60%;
+  }
+  
+  .case-analysis .page-subtitle {
+    max-width: 60%;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+  .case-analysis {
+    padding: 0;
+    overflow-x: hidden !important;
+  }
+  
+  .case-analysis .header {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+  }
+  
+  .case-analysis .header.header-visible {
+    transform: translateY(0);
+  }
+  
+  .case-analysis .header.header-hidden {
+    transform: translateY(-100%);
+  }
+  
+  .case-analysis .top-panel {
+    height: auto;
+    min-height: 70px;
+  }
+  
+  .case-analysis .panel-background {
+    width: 100%;
+  }
+  
+  .case-analysis .page-title {
+    font-size: 14px;
+    left: 140px;
+    top: 18px;
+    max-width: calc(100% - 150px);
+  }
+
+  .case-analysis .page-subtitle {
+    font-size: 11px;
+    left: 140px;
+    top: 38px;
+    max-width: calc(100% - 150px);
+  }
+  
+  .case-analysis .main-content {
+    padding: 85px 20px 0 20px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .case-analysis .case-analysis-nav {
+    padding: 0 0 40px 0;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+  .case-analysis {
+    overflow-x: hidden !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .case-analysis::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .case-analysis * {
+    max-width: 100vw;
+  }
+  
+  .case-analysis .header {
+    left: 0;
+  }
+  
+  .case-analysis .header.header-visible {
+    transform: translateY(0);
+  }
+  
+  .case-analysis .header.header-hidden {
+    transform: translateY(-100%);
+  }
+  
+  .case-analysis .logo-container {
+    left: 10px;
+  }
+  
+  .case-analysis .brand-name {
+    left: 48px;
+  }
+  
+  .case-analysis .tagline {
+    left: 49px;
+  }
+  
+  .case-analysis .main-content {
+    padding: 75px 15px 0 15px;
+    overflow-x: hidden;
+  }
+  
+  .case-analysis .case-analysis-btn-back,
+  .case-analysis .case-analysis-btn-next {
+    padding: 0 12px;
+    min-width: 65px;
+  }
+}

@@ -1,0 +1,185 @@
+/* Case Precedents Section */
+.case-precedents-section {
+  width: 100%;
+  max-width: 1287px;
+  margin-top: 43px;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.precedent-card {
+  width: 100%;
+  border-radius: 14px;
+  border: 3px solid #FFF;
+  background: #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 24px 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.precedent-card:last-child {
+  margin-bottom: 0;
+}
+
+.precedent-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.precedent-header svg {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.precedent-info {
+  flex: 1;
+}
+
+.precedent-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.01em;
+}
+
+.precedent-court {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #D1D5DB;
+  line-height: 1.5;
+  text-transform: capitalize;
+  margin: 0 0 10px 0;
+}
+
+.precedent-award {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #1F2937;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+}
+
+.precedent-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #D1D5DB;
+  line-height: 1.6;
+  margin: 0 0 14px 0;
+  margin-left: 36px;
+}
+
+.precedent-card .toggle-details {
+  color: #9CA3AF;
+}
+
+.precedent-card .toggle-details:hover {
+  color: #D1D5DB;
+}
+
+.precedent-card .toggle-details svg path {
+  stroke: #9CA3AF;
+  transition: stroke 0.2s ease;
+}
+
+.precedent-card .toggle-details:hover svg path {
+  stroke: #D1D5DB;
+}
+
+.precedent-details {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  background: #FFF;
+  line-height: 1.7;
+  margin: 0;
+  margin-left: 36px;
+  padding: 16px 16px 16px 20px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.toggle-details {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  line-height: 1.4;
+  padding: 0;
+  margin-bottom: 14px;
+  margin-left: 25px;
+  transition: color 0.2s ease;
+}
+
+.toggle-details:hover {
+  color: #111827;
+}
+
+.toggle-details svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transform: translateY(2px);
+  transition: transform 0.3s ease;
+}
+
+.chevron-down {
+  transform: translateY(2px) rotate(0deg);
+}
+
+.chevron-up {
+  transform: translateY(2px) rotate(180deg);
+}
+@media (max-width: 768px) {
+  .precedent-card {
+    padding: 20px;
+  }
+  
+  .precedent-description,
+  .precedent-details {
+    margin-left: 0;
+  }
+  
+  .toggle-details {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .case-precedents-section {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}

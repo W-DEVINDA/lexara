@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.rtp-research-tools-panel {
+  width: 282px;
+  background: #0F172B;
+  padding: 11px 16px 11px 28px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.rtp-research-tools-panel .rtp-panel-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 27.5px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-left: 4px;
+}
+
+.rtp-tools-section {
+  margin-bottom: 26px;
+  padding-left: 4px;
+}
+
+.rtp-section-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+  padding-left: 2px;
+}
+
+.rtp-section-title:hover {
+  color: #a1c1bd;
+}
+
+.rtp-section-icon {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.rtp-tool-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #81A19D;
+  line-height: 18px;
+  margin: 6px 0 6px 17px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding-left: 8px;
+}
+
+.rtp-tool-link:hover {
+  color: #FFF;
+}
+@media (max-width: 768px) {
+  .rtp-research-tools-panel {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .rtp-research-tools-panel {
+    width: 220px;
+    padding: 11px 12px;
+  }
+}

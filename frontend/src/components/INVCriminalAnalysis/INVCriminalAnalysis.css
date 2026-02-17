@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.section-title-main {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFF;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.03em;
+}
+
+.criminal-elements-section {
+  margin-bottom: 80px;
+}
+
+.criminal-element-full-card {
+  background: #000;
+  border-radius: 0;
+  border: 3px solid #FFF;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.element-top-bar {
+  background: #000;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #FFF;
+}
+
+.element-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.element-bar-left svg {
+  color: #FFF;
+  flex-shrink: 0;
+}
+
+.element-title-bar {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFF;
+  margin: 0 0 2px 0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.element-subtitle-bar {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #D1D5DB;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.element-type-badge {
+  padding: 6px 14px;
+  background: #FFF;
+  color: #000;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.element-main-content {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  background: #FFF;
+}
+
+.element-text-section {
+  border-left: 3px solid #6B7280;
+  padding-left: 20px;
+}
+
+.element-section-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.conduct-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 0;
+}
+
+.conduct-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.7;
+  text-align: justify;
+  padding-left: 20px;
+  position: relative;
+}
+
+.conduct-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #000;
+}
+
+.evidence-flow-timeline {
+  background: #FFFBEA;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.flow-steps-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.flow-step-h {
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.99)),
+    linear-gradient(to bottom, #acacad 0%, #BBBBC3 25%, #A3A3AB 50%, #8B8B93 75%, #71717A 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #9CA3AF;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1;
+  min-width: 0;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.flow-step-h.flow-final-h {
+  border-color: #9CA3AF;
+  border-width: 2px;
+}
+
+.step-number-h {
+  width: 32px;
+  height: 32px;
+  background: #DC2626;
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.step-title-h {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.step-desc-h {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.flow-connector-h {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+
+.flow-connector-h svg {
+  flex-shrink: 0;
+}
+
+.proves-section {
+  background: #F9FAFB;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.proves-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.proves-header svg {
+  color: #111827;
+}
+
+.proves-header span {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.proves-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.proves-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.6;
+}
+
+.conclusion-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.6;
+}
+
+.highlight-text {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 500;
+  color: #4B5563;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+.highlight-red {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 700;
+  color: #000;
+}
+
+.highlight-red strong {
+  color: #000;
+}
+
+.intent-indicators-section {
+  background: #F9FAFB;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.intent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.intent-card {
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.47), rgba(255, 255, 255, 0.83), rgba(255, 255, 255, 0.99)),
+    linear-gradient(to bottom, #acacad 0%, #BBBBC3 25%, #A3A3AB 50%, #8B8B93 75%, #71717A 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #9CA3AF;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.intent-num {
+  width: 32px;
+  height: 32px;
+  background: #DC2626;
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.intent-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.intent-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .intent-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .flow-steps-horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .flow-connector-h {
+    transform: rotate(90deg);
+    margin: 8px 0;
+  }
+}
