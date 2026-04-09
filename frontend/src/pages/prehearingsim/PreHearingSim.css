@@ -49,10 +49,9 @@ body {
 
 .phs-header-pre-hearing {
   width: 100%;
-  max-width: 1440px;
   height: 70px;
   position: fixed;
-  left: 50%;
+  left: 0;
   top: 0;
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
@@ -60,17 +59,19 @@ body {
 }
 
 .phs-header-visible {
-  transform: translate(-50%, 0);
+  transform: translateY(0);
 }
 
 .phs-header-hidden {
-  transform: translate(-50%, -100%);
+  transform: translateY(-100%);
 }
 
 .phs-top-panel {
   width: 100%;
+  max-width: 1440px;
   height: 70px;
   position: relative;
+  margin: 0 auto;
 }
 
 .phs-top-panel-border {

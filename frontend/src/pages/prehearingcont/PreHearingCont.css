@@ -49,10 +49,9 @@ body {
 /* Header with Hide/Show Animation */
 .header-pre-hearing {
   width: 100%;
-  max-width: 1440px;
   height: 70px;
   position: fixed;
-  left: 50%;
+  left: 0;
   top: 0;
   z-index: 1000;
   transition: transform 0.3s ease-in-out;
@@ -60,17 +59,19 @@ body {
 }
 
 .header-visible {
-  transform: translate(-50%, 0);
+  transform: translateY(0);
 }
 
 .header-hidden {
-  transform: translate(-50%, -100%);
+  transform: translateY(-100%);
 }
 
 .pre-hearing-container .top-panel {
   width: 100%;
+  max-width: 1440px;
   height: 70px;
   position: relative;
+  margin: 0 auto;
 }
 
 .top-panel-border {
@@ -1443,22 +1444,7 @@ body {
 
 @media (max-width: 768px) {
 
-  .header-pre-hearing {
-    max-width: 100%;
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
-
-  .header-visible {
-    transform: translateY(0) !important;
-  }
-
-  .header-hidden {
-    transform: translateY(-100%) !important;
-  }
-
-  .content-wrapper {
+.content-wrapper {
     padding: 85px 12px 0 12px;
     gap: 16px;
   }

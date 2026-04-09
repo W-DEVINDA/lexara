@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import './CaseAnalysis.css';
 
-// Import all components
+
 import ProgressRings from '../../components/ProgressRings/ProgressRings';
 import CaseOverview from '../../components/CaseOverview/CaseOverview';
 import EvidenceSummary from '../../components/EvidenceSummary/EvidenceSummary';
