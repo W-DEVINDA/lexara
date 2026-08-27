@@ -68,7 +68,7 @@ function Homepage() {
   // Generate meaningful title using AI
   const generateConversationTitle = async (userMessage) => {
     try {
-      const response = await fetch('http://localhost:5000/api/generate-title', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/generate-title`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -273,7 +273,7 @@ function Homepage() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

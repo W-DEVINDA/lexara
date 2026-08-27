@@ -51,7 +51,7 @@ const [resizeStart, setResizeStart] = useState({ x: 0, y: 0, width: 0, height: 0
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/chat', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

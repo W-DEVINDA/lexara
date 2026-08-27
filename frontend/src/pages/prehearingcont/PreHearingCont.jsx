@@ -195,8 +195,8 @@ setMessages(prev => {
     try {
       // Get defense counsel response
      const apiEndpoint = selectedRole === 'plaintiff' 
-  ? 'http://localhost:5000/api/defense-counsel'
-  : 'http://localhost:5000/api/plaintiff-counsel';
+  ? `${import.meta.env.VITE_API_URL}/api/defense-counsel`
+  : `${import.meta.env.VITE_API_URL}/api/plaintiff-counsel`;
 
 const response = await fetch(apiEndpoint, {
   method: 'POST',
@@ -255,7 +255,7 @@ if (conversationLength >= 5 && conversationLength % 4 === 1) {
     if (currentMessages.length < 3) return; 
 
     try {
-      const response = await fetch('http://localhost:5000/api/analyze-strategy', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/analyze-strategy`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -314,7 +314,7 @@ const generateRoundSummary = async (round) => {
   setIsLoadingSummary(true);
   
   try {
-    const response = await fetch('http://localhost:5000/api/generate-summary', {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/generate-summary`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
