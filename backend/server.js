@@ -56,7 +56,7 @@ Do NOT be agreeable. Your job is to defend your client vigorously within legal b
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "mistralai/Mistral-7B-Instruct-v0.2",
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         messages: messages,
         max_tokens: 150,
         temperature: 0.8,
@@ -119,7 +119,7 @@ Present your case vigorously within legal and ethical bounds.`
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "mistralai/Mistral-7B-Instruct-v0.2",
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         messages: messages,
         max_tokens: 150,
         temperature: 0.8,
@@ -178,7 +178,7 @@ If no significant points, respond: {"hasSignificantPoint": false, "strategyUpdat
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "mistralai/Mistral-7B-Instruct-v0.2",
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         messages: messages,
         max_tokens: 100,
         temperature: 0.5,
@@ -232,7 +232,7 @@ async function generateResponse(conversationHistory, userMessage) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "mistralai/Mistral-7B-Instruct-v0.2",
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         messages: messages,
         max_tokens: 200,
         temperature: 0.7,
@@ -272,7 +272,7 @@ async function generateConversationTitle(userMessage) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: "mistralai/Mistral-7B-Instruct-v0.2",
+        model: "meta-llama/Llama-3.1-8B-Instruct",
         messages: messages,
         max_tokens: 30,
         temperature: 0.5,
@@ -575,7 +575,7 @@ Keep it objective and focused on legal substance.`
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: "mistralai/Mistral-7B-Instruct-v0.2",
+          model: "meta-llama/Llama-3.1-8B-Instruct",
           messages: messages,
           max_tokens: 200,
           temperature: 0.5,
@@ -621,7 +621,7 @@ app.get('/api/health', (req, res) => {
   res.json({ 
     status: 'ok', 
     message: 'LEXARA Server is running',
-    model: 'mistralai/Mistral-7B-Instruct-v0.2',
+    model: 'meta-llama/Llama-3.1-8B-Instruct',
     provider: 'Hugging Face Inference Providers (Auto-routed)',
     endpoint: 'https://router.huggingface.co/v1/chat/completions'
   });
@@ -666,7 +666,7 @@ app.get('/api/test-key', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`\n✓ LEXARA Server running on port ${PORT}`);
   console.log(`✓ Using: Hugging Face Inference Providers (Router)`);
-  console.log(`✓ Model: mistralai/Mistral-7B-Instruct-v0.2 (auto-routed)`);
+  console.log(`✓ Model: meta-llama/Llama-3.1-8B-Instruct (auto-routed)`);
   console.log(`✓ Health check: http://localhost:${PORT}/api/health`);
   console.log(`✓ Test API key: http://localhost:${PORT}/api/test-key`);
   console.log(`\n⚠️  NOTE: Using monthly free credits from Inference Providers`);
