@@ -23,7 +23,7 @@ function ChatArea({
 
   return (
     <div className={`ca-chat-area${!isChatHistoryOpen ? ' ca-expanded' : ''}`}>
-      <div className="ca-chat-header">LEXARA</div>
+      <div className="ca-chat-header">LEGALX</div>
       
       <div className="ca-chat-messages">
         <AnimatePresence mode="sync">

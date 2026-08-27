@@ -178,8 +178,8 @@ useEffect(() => {
             <div className="cs-logo-text">
               <div className="cs-brand-name">
                 <span className="cs-gruppo">LE</span>
+                <span className="cs-gruppo">GAL</span>
                 <span className="cs-bruno">x</span>
-                <span className="cs-gruppo">ARA</span>
               </div>
               <div className="cs-tagline">Legal Research</div>
             </div>
@@ -192,8 +192,8 @@ useEffect(() => {
 
           <div className="cs-user-section">
             <div className="cs-user-info">
-              <div className="cs-user-name">Ahmed Rahman</div>
-              <div className="cs-user-plan">Professional plan</div>
+              <div className="cs-user-name">USER NAME</div>
+              <div className="cs-user-plan">Basic plan</div>
             </div>
             <div className="cs-user-avatar">
               <span className="cs-avatar-letter">A</span>

@@ -145,9 +145,9 @@ function PreInvestigator() {
             </div>
             <div className="investigator-logo-text">
               <div className="investigator-brand-name">
-                <span className="gruppo">LE</span>
+                <span className="gruppo">LEGAL</span>
                 <span className="bruno">x</span>
-                <span className="gruppo">ARA</span>
+                
               </div>
               <div className="investigator-tagline">Legal Research</div>
             </div>
@@ -156,8 +156,8 @@ function PreInvestigator() {
           <div className="investigator-page-subtitle">Establish the legal foundation of your investigation</div>
           <div className="investigator-user-section">
             <div className="investigator-user-info">
-              <div className="investigator-user-name">Ahmad Rahman</div>
-              <div className="investigator-user-plan">Professional plan</div>
+              <div className="investigator-user-name">USER NAME</div>
+              <div className="investigator-user-plan">Basic plan</div>
             </div>
             <div className="investigator-user-avatar">
               <span className="investigator-avatar-letter">A</span>

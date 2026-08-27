@@ -35,7 +35,7 @@ function Homepage() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hello! I'm your Lexara...Your Legal Assistant. How may I help you today?",
+      content: "Hello! I'm your LegalX...Your Legal Assistant. How may I help you today?",
       isInitial: true,
       timestamp: Date.now()
     }
@@ -51,7 +51,7 @@ function Homepage() {
       messages: [
         {
           role: 'assistant',
-          content: "Hello! I'm your Lexara...Your Legal Assistant. How may I help you today?",
+          content: "Hello! I'm LegalX...Your Legal Assistant. How may I help you today?",
           isInitial: true,
           timestamp: Date.now()
         }
@@ -137,7 +137,7 @@ function Homepage() {
         {
           role: 'assistant',
           content: isFirstEverChat 
-            ? "Hello! I'm your Lexara...Your Legal Assistant. How may I help you today?"
+            ? "Hello! I'm your LegalX...Your Legal Assistant. How may I help you today?"
             : "Hi! How may I assist you today",
           isInitial: true,
           timestamp: Date.now()
@@ -343,8 +343,8 @@ return (
           <div className="logo-text">
             <div className="brand-name">
               <span className="gruppo">LE</span>
+              <span className="gruppo">GAL</span>
               <span className="bruno">x</span>
-              <span className="gruppo">ARA</span>
             </div>
             <div className="tagline">Legal Research</div>
           </div>
@@ -367,8 +367,8 @@ return (
 
         <div className="user-section">
           <div className="user-info">
-            <div className="user-name">Ahmad Rahman</div>
-            <div className="user-plan">Professional plan</div>
+            <div className="user-name">USER NAME</div>
+            <div className="user-plan">Basic plan</div>
           </div>
           <div className="user-avatar">
             <span className="avatar-letter">A</span>

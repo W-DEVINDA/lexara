@@ -145,9 +145,9 @@ function PrimaFacie() {
             </div>
             <div className="logo-text">
               <div className="brand-name">
-                <span className="gruppo">LE</span>
+                <span className="gruppo">LEGAL</span>
                 <span className="bruno">x</span>
-                <span className="gruppo">ARA</span>
+                
               </div>
               <div className="tagline">Legal Research</div>
             </div>
@@ -156,8 +156,8 @@ function PrimaFacie() {
           <div className="page-subtitle">Build Your Case Foundation</div>
           <div className="user-section">
             <div className="user-info">
-              <div className="user-name">Ahmad Rahman</div>
-              <div className="user-plan">Professional plan</div>
+              <div className="user-name">USER NAME</div>
+              <div className="user-plan">Basic plan</div>
             </div>
             <div className="user-avatar">
               <span className="avatar-letter">A</span>

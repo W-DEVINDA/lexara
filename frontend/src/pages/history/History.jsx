@@ -218,8 +218,8 @@ function History() {
             <div className="hist-logo-text">
               <div className="hist-brand-name">
                 <span className="hist-gruppo">LE</span>
+                <span className="hist-gruppo">GAL</span>
                 <span className="hist-bruno">x</span>
-                <span className="hist-gruppo">ARA</span>
               </div>
               <div className="hist-tagline">Legal Research</div>
             </div>
@@ -232,8 +232,8 @@ function History() {
 
           <div className="hist-user-section">
             <div className="hist-user-info">
-              <div className="hist-user-name">Ahmad Rahman</div>
-              <div className="hist-user-plan">Professional plan</div>
+              <div className="hist-user-name">USER NAME</div>
+              <div className="hist-user-plan">Basic plan</div>
             </div>
             <div className="hist-user-avatar">
               <span className="hist-avatar-letter">A</span>
