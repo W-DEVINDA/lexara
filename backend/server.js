@@ -202,7 +202,7 @@ async function generateResponse(conversationHistory, userMessage) {
   const messages = [
     {
       role: "system",
-      content: "You are LEXARA, a professional and knowledgeable legal assistant specializing in Malaysian law. Provide helpful, accurate, and concise information about Malaysian legal matters."
+      content: "You are LegalX, a professional and knowledgeable legal assistant specializing in Malaysian law. Provide helpful, accurate, and concise information about Malaysian legal matters."
     }
   ];
   
@@ -364,7 +364,7 @@ app.post('/api/chat', async (req, res) => {
 
     // Fallback response
     if (!reply || reply.trim().length < 10) {
-      reply = "I'm LEXARA, your Malaysian legal assistant. I'm here to help with legal questions. Could you please provide more details?";
+      reply = "I'm LegalX, your Malaysian legal assistant. I'm here to help with legal questions. Could you please provide more details?";
     }
 
     console.log('Final reply:', reply.trim());
@@ -620,7 +620,7 @@ Keep it objective and focused on legal substance.`
 app.get('/api/health', (req, res) => {
   res.json({ 
     status: 'ok', 
-    message: 'LEXARA Server is running',
+    message: 'Legalx Server is running',
     model: 'meta-llama/Llama-3.1-8B-Instruct',
     provider: 'Hugging Face Inference Providers (Auto-routed)',
     endpoint: 'https://router.huggingface.co/v1/chat/completions'
@@ -664,7 +664,7 @@ app.get('/api/test-key', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n✓ LEXARA Server running on port ${PORT}`);
+  console.log(`\n✓ LegalX Server running on port ${PORT}`);
   console.log(`✓ Using: Hugging Face Inference Providers (Router)`);
   console.log(`✓ Model: meta-llama/Llama-3.1-8B-Instruct (auto-routed)`);
   console.log(`✓ Health check: http://localhost:${PORT}/api/health`);
