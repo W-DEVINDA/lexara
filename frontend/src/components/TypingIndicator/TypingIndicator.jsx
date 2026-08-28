@@ -19,7 +19,7 @@ function TypingIndicator() {
       </motion.div>
       
       <div className="mb-message-content">
-        <div className="mb-message-sender">LEXARA</div>
+        <div className="mb-message-sender">LEGALX</div>
         <div className="mb-message-bubble mb-lexara-bubble">
           <div className="ti-typing-indicator">
             <span></span>
