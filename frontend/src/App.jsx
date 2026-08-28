@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Homepage from './pages/Homepage/Homepage';
-import PrimaFacie from './pages/PrimaFacie/PrimaFacie';
+import Homepage from './pages/homepage/Homepage';
+import PrimaFacie from './pages/primafacie/PrimaFacie';
 import PreHearing from './pages/prehearing/PreHearing';
 import PreHearingSim from './pages/prehearingsim/PreHearingSim';
 import CaseAnalysis from './pages/caseanalysis/CaseAnalysis';
