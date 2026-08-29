@@ -16,7 +16,7 @@ const [resizeStart, setResizeStart] = useState({ x: 0, y: 0, width: 0, height: 0
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hello! I'm LEXARA. How can I help you with the investigator report ?"
+      content: "Hello! I'm LEGALX. How can I help you with the investigator report ?"
     }
   ]);
   const [inputMessage, setInputMessage] = useState('');
@@ -229,9 +229,9 @@ useEffect(() => {
         <div className="lexara-invchat-avatar">L</div>
         <div>
           <div className="lexara-invchat-title">
-            <span className="lexara-gruppo">LE</span>
+            <span className="lexara-gruppo">LEGAL</span>
             <span className="lexara-bruno">x</span>
-            <span className="lexara-gruppo">ARA</span>
+          
           </div>
           <div className="lexara-invchat-subtitle">Legal Assistant</div>
         </div>
