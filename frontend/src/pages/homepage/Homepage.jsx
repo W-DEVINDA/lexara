@@ -35,7 +35,7 @@ function Homepage() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hello! I'm your LegalX...Your Legal Assistant. How may I help you today?",
+      content: "Hello! I'm LegalX...Your Legal Assistant. How may I help you today?",
       isInitial: true,
       timestamp: Date.now()
     }
