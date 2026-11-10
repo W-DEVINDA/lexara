@@ -11,11 +11,7 @@
   position: relative;
 }
 
-@media (max-width: 768px) {
-  .chp-chat-history-panel {
-    display: none;
-  }
-}
+
 
 .chp-chat-history-panel::-webkit-scrollbar {
   width: 6px;
@@ -106,9 +102,25 @@
   line-height: 27.5px;
   margin-bottom: 5px;
 }
-/* Hide on tablets and mobile */
+/* Tablets and phones: Chat History slides in from the left */
 @media (max-width: 1024px) {
   .chp-chat-history-panel {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(300px, 85%) !important;
+    padding: 12px 14px !important;
+    opacity: 1 !important;
+    border-right: 1px solid #314158 !important;
+    overflow-y: auto !important;
+    z-index: 60;
+    transition: transform 0.3s ease, visibility 0.3s !important;
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .chp-chat-history-panel.chp-closed {
+    transform: translateX(-105%);
+    visibility: hidden;
   }
 }

@@ -1,0 +1,100 @@
+/* ===== Phones and small tablets: shared page header ===== */
+@media (max-width: 768px) {
+  /* logo: keep the "L" box, hide the long LEGALX text so the page title has room */
+  [class*="logo-text"] {
+    display: none !important;
+  }
+
+  [class*="page-title"]:not([class*="section"]) {
+    left: 56px !important;
+    top: 9px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: calc(100% - 120px) !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  [class*="page-subtitle"] {
+    left: 56px !important;
+    top: 30px !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: calc(100% - 120px) !important;
+    font-size: 11px !important;
+    line-height: 16px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* history + case summary pages wrap title and subtitle in one box */
+  [class*="page-title-section"] {
+    left: 56px !important;
+    top: 9px !important;
+    max-width: calc(100% - 120px) !important;
+  }
+
+  [class*="page-title-section"] [class*="page-title"],
+  [class*="page-title-section"] [class*="page-subtitle"] {
+    position: static !important;
+    max-width: 100% !important;
+  }
+
+  [class*="page-title-section"] [class*="page-title"] {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
+  [class*="page-title-section"] [class*="page-subtitle"] {
+    font-size: 11px !important;
+    line-height: 16px !important;
+    top: 0 !important;
+  }
+}
+
+/* ===== Case Analysis page: content was squashed to nothing on phones ===== */
+@media (max-width: 768px) {
+  .case-analysis .main-content {
+    overflow: visible !important;
+    flex-shrink: 0;
+  }
+
+  .case-analysis .main-content > * {
+    flex-shrink: 0;
+  }
+
+  .case-analysis .brand-name,
+  .case-analysis .tagline {
+    display: none !important;
+  }
+}
+
+/* ===== Previous Cases + Case Summary: show the page title on phones too ===== */
+@media (max-width: 768px) {
+  .hist-history-page .hist-page-title-section,
+  .cs-case-summary-page .cs-page-title-section {
+    display: block !important;
+  }
+}
+
+/* ===== Investigator Report: steps header, progress bar and timeline fit the screen ===== */
+@media (max-width: 768px) {
+  .investigation-steps-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .investigation-steps-progress {
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+  }
+
+  .timeline-event-card {
+    width: calc(100% - 70px);
+  }
+}

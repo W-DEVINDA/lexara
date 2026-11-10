@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './ResearchToolsPanel.css';
 
-function ResearchToolsPanel({ onResourceClick }) {
+function ResearchToolsPanel({ onResourceClick, mobileOpen }) {
   const [expandedSections, setExpandedSections] = useState({
     quickReferences: false,
     legalGuides: false,
@@ -17,7 +17,7 @@ function ResearchToolsPanel({ onResourceClick }) {
   };
 
   return (
-    <div className="rtp-research-tools-panel">
+    <div className={`rtp-research-tools-panel${mobileOpen ? ' rtp-mobile-open' : ''}`}>
       <h2 className="rtp-panel-title">Research Tools</h2>
       
       <div className="rtp-tools-section">

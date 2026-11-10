@@ -68,7 +68,22 @@
 }
 @media (max-width: 768px) {
   .rtp-research-tools-panel {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(300px, 85%);
+    z-index: 60;
+    overflow-y: auto;
+    transform: translateX(105%);
+    visibility: hidden;
+    transition: transform 0.3s ease, visibility 0.3s;
+    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .rtp-research-tools-panel.rtp-mobile-open {
+    transform: translateX(0);
+    visibility: visible;
   }
 }
 

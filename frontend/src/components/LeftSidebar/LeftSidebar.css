@@ -114,13 +114,16 @@
   
   .nav-item {
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
-    padding: 8px 12px;
-    min-width: 80px;
+    padding: 8px 4px;
+    flex: 1 1 0;
+    min-width: 0;
   }
   
   .nav-item span {
     font-size: 10px;
+    line-height: 13px;
     text-align: center;
   }
   
@@ -130,7 +133,5 @@
   }
   
   
-  .nav-item:last-child {
-    display: none;
-  }
+
 }
