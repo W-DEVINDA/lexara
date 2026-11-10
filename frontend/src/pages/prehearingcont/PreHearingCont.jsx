@@ -195,8 +195,8 @@ setMessages(prev => {
     try {
       // Get defense counsel response
      const apiEndpoint = selectedRole === 'plaintiff' 
-  ? 'http://localhost:5000/api/defense-counsel'
-  : 'http://localhost:5000/api/plaintiff-counsel';
+  ? `${import.meta.env.VITE_API_URL}/api/defense-counsel`
+  : `${import.meta.env.VITE_API_URL}/api/plaintiff-counsel`;
 
 const response = await fetch(apiEndpoint, {
   method: 'POST',
@@ -255,7 +255,7 @@ if (conversationLength >= 5 && conversationLength % 4 === 1) {
     if (currentMessages.length < 3) return; 
 
     try {
-      const response = await fetch('http://localhost:5000/api/analyze-strategy', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/analyze-strategy`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -314,7 +314,7 @@ const generateRoundSummary = async (round) => {
   setIsLoadingSummary(true);
   
   try {
-    const response = await fetch('http://localhost:5000/api/generate-summary', {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/generate-summary`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -525,9 +525,9 @@ return (
 <div className="logo-letter" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>L</div>
 
 <div className="brand-name" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>
-  <span className="brand-le">LE</span>
+  <span className="brand-le">LEGAL</span>
   <span className="brand-x">x</span>
-  <span className="brand-ara">ARA</span>
+
 </div>
 
 <div className="brand-tagline" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>Legal Research</div>
@@ -538,8 +538,8 @@ return (
           </div>
           
           <div className="user-section">
-            <div className="user-name">Ahmad Rahman</div>
-            <div className="user-plan">Professional plan</div>
+            <div className="user-name">USER NAME</div>
+            <div className="user-plan">Basic plan</div>
             <svg className="user-avatar-gradient" width="32" height="30" viewBox="0 0 32 30" fill="none">
               <ellipse cx="16" cy="15" rx="16" ry="15" fill="url(#paint0_linear_317_191)"/>
               <defs>

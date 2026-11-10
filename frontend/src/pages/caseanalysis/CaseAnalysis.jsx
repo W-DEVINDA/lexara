@@ -117,9 +117,9 @@ return (
 </div>
 
 <div className="brand-name" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>
-  <span className="brand-le">LE</span>
+  <span className="brand-le">LEGAL</span>
   <span className="brand-x">x</span>
-  <span className="brand-ara">ARA</span>
+ 
 </div>
 
 <div className="tagline" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>Legal Research</div>
@@ -128,8 +128,8 @@ return (
           <div className="page-subtitle">Money Laundering and Corporate Fraud Case</div>
           
           <div className="user-section">
-            <div className="user-name">Ahmed Rahman</div>
-            <div className="user-plan">Professional plan</div>
+            <div className="user-name">USER NAME</div>
+            <div className="user-plan">Basic plan</div>
             <svg className="user-avatar-gradient" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="16" cy="15" rx="16" ry="15" fill="url(#paint0_linear_413_177)"/>
               <defs>

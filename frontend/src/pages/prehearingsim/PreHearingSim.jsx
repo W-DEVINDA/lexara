@@ -276,9 +276,9 @@ useEffect(() => {
 <div className="phs-logo-letter" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>L</div>
 
 <div className="phs-brand-name" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>
-  <span className="phs-brand-le">LE</span>
+  <span className="phs-brand-le">LEGAL</span>
   <span className="phs-brand-x">x</span>
-  <span className="phs-brand-ara">ARA</span>
+  
 </div>
 
 <div className="phs-brand-tagline" onClick={handleNavigateHome} style={{ cursor: 'pointer' }}>Legal Research</div>
@@ -290,8 +290,8 @@ useEffect(() => {
           </div>
           
           <div className="phs-user-section">
-            <div className="phs-user-name">Ahmad Rahman</div>
-            <div className="phs-user-plan">Professional plan</div>
+            <div className="phs-user-name">USER NAME</div>
+            <div className="phs-user-plan">Basic plan</div>
             <svg className="phs-user-avatar-gradient" width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <ellipse cx="16" cy="15" rx="16" ry="15" fill="url(#paint0_linear_317_191)"/>
               <defs>

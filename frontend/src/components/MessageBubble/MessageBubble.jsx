@@ -8,7 +8,7 @@ function MessageBubble({ message, index, disableAnimation }) {
 
   if (disableAnimation) {
     return (
-      <div className={`mb-message ${isUser ? 'mb-user-message' : 'mb-lexara-message'}`}>
+      <div className={`mb-message ${isUser ? 'mb-user-message' : 'mb-legalx-message'}`}>
         {!isUser && (
           <div className="mb-message-avatar">
             <span>L</span>
@@ -17,10 +17,10 @@ function MessageBubble({ message, index, disableAnimation }) {
         
         <div className="mb-message-content">
           <div className="mb-message-sender">
-            {isUser ? 'YOU' : 'LEXARA'}
+            {isUser ? 'YOU' : 'LEGALX'}
           </div>
           
-          <div className={`mb-message-bubble ${isUser ? 'mb-user-bubble' : 'mb-lexara-bubble'}`}>
+          <div className={`mb-message-bubble ${isUser ? 'mb-user-bubble' : 'mb-legalx-bubble'}`}>
             {message.content}
           </div>
         </div>
@@ -79,7 +79,7 @@ function MessageBubble({ message, index, disableAnimation }) {
       variants={!isUser ? (isInitial ? initialGreetingVariants : lexaraResponseVariants) : undefined}
       initial={!isUser ? "hidden" : undefined}
       animate={!isUser ? "visible" : undefined}
-      className={`mb-message ${isUser ? 'mb-user-message' : 'mb-lexara-message'}`}
+      className={`mb-message ${isUser ? 'mb-user-message' : 'mb-legalx-message'}`}
     >
       {!isUser && (
         <motion.div
@@ -104,7 +104,7 @@ function MessageBubble({ message, index, disableAnimation }) {
           animate={!isUser ? { opacity: 1, y: 0 } : undefined}
           transition={!isUser ? { delay: isInitial ? 0.5 : 0.2 } : undefined}
         >
-          {isUser ? 'YOU' : 'LEXARA'}
+          {isUser ? 'YOU' : 'LEGALX'}
         </motion.div>
         
         <motion.div

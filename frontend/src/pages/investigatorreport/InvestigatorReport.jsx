@@ -123,9 +123,9 @@ const handleNavigateHome = () => {
             </div>
             <div className="investigator-report-logo-text">
               <div className="investigator-report-brand-name">
-                <span className="gruppo">LE</span>
+                <span className="gruppo">LEGAL</span>
                 <span className="bruno">x</span>
-                <span className="gruppo">ARA</span>
+               
               </div>
               <div className="investigator-report-tagline">Legal Research</div>
             </div>
@@ -134,8 +134,8 @@ const handleNavigateHome = () => {
           <div className="investigator-report-page-subtitle">Complete Automated Investigation Analysis</div>
           <div className="investigator-report-user-section">
             <div className="investigator-report-user-info">
-              <div className="investigator-report-user-name">Ahmad Rahman</div>
-              <div className="investigator-report-user-plan">Professional plan</div>
+              <div className="investigator-report-user-name">USER NAME</div>
+              <div className="investigator-report-user-plan">Basic plan</div>
             </div>
             <div className="investigator-report-user-avatar">
               <span className="investigator-report-avatar-letter">A</span>
