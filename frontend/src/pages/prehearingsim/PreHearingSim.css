@@ -10,7 +10,7 @@ html {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
-  max-width: 100vw;
+  max-width: calc(var(--vw, 1vw) * 100);
   height: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
   background: #000;
   overflow: hidden;
   width: 100%;
-  max-width: 100vw;
+  max-width: calc(var(--vw, 1vw) * 100);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -26,8 +26,8 @@ body {
 
 .phs-pre-hearing-container {
   width: 100%;
-  max-width: 100vw;
-  height: 100vh;
+  max-width: calc(var(--vw, 1vw) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   background: #000;
   position: relative;
   overflow-y: auto;
@@ -748,7 +748,7 @@ body {
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .phs-content-wrapper {
     padding: 105px 20px 0 94px;
   }
@@ -832,7 +832,7 @@ body {
   }
 
   .phs-page-subtitle {
-    max-width: 45vw;
+    max-width: calc(var(--vw, 1vw) * 45);
   }
 }
 
@@ -871,7 +871,7 @@ body {
 
 
   .phs-bubble {
-    max-width: 80vw;
+    max-width: calc(var(--vw, 1vw) * 80);
     font-size: 11px;
     padding: 14px;
   }
@@ -918,7 +918,7 @@ body {
   }
 
   .phs-bubble {
-    max-width: 88vw;
+    max-width: calc(var(--vw, 1vw) * 88);
     font-size: 11px;
     padding: 10px 12px;
   }

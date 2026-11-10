@@ -8,7 +8,7 @@
 
 .hist-history-page {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   background: #000;
   overflow-y: auto;
   overflow-x: hidden;
@@ -683,7 +683,7 @@
    ============================================ */
 
 /* Large screens */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .hist-history-page .hist-active-cases-section,
   .hist-history-page .hist-completed-cases-section,
   .hist-history-page .hist-bottom-buttons {

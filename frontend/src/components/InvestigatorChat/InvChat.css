@@ -422,7 +422,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .lexara-invchat-window {
-    width: calc(100vw - 32px);
+    width: calc(calc(var(--vw, 1vw) * 100) - 32px);
     height: 480px;
     bottom: 16px;
     right: 8px;

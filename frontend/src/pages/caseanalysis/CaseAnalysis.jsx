@@ -105,7 +105,7 @@ return (
     }}
     exit={{ opacity: 0 }}
     transition={{ duration: 0.25, ease: "easeOut" }}
-    style={{ width: '100%', height: '100vh' }}
+    style={{ width: '100%', height: 'calc(var(--vh, 1vh) * 100)' }}
   >
     <header className={`header ${showHeader ? 'header-visible' : 'header-hidden'}`}>
         <div className="top-panel">

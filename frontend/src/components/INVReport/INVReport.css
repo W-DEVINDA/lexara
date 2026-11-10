@@ -618,7 +618,7 @@
   margin: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .assessment-grid-main,
   .metrics-row-top {
     grid-template-columns: 1fr;

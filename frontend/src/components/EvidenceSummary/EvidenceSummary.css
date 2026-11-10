@@ -159,8 +159,8 @@
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
+  width: calc(var(--vw, 1vw) * 100) !important;
+  height: calc(var(--vh, 1vh) * 100) !important;
   background: rgba(0, 0, 0, 0.75) !important;
   backdrop-filter: blur(8px);
   z-index: 9998 !important;
@@ -174,7 +174,7 @@
   transform: translate(-50%, -50%) !important;
   width: 90% !important;
   max-width: 1150px !important;
-  max-height: 90vh !important;
+  max-height: calc(var(--vh, 1vh) * 90) !important;
   background: #F3F4F6 !important;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -412,7 +412,7 @@
   
   .cae-evidence-modal {
     width: 95% !important;
-    max-height: 90vh !important;
+    max-height: calc(var(--vh, 1vh) * 90) !important;
   }
   
   .cae-evidence-modal-header {

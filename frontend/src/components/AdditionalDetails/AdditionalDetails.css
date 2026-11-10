@@ -511,7 +511,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .cards-container {
     grid-template-columns: 1fr;
     gap: 20px;
