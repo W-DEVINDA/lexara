@@ -337,7 +337,7 @@ function Homepage() {
 
 return (
   <motion.div 
-    className="homepage"
+    className={`homepage${isChatHistoryOpen ? ' history-open' : ''}`}
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.25, ease: "easeOut" }}

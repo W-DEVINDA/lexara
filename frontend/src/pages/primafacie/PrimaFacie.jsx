@@ -356,7 +356,7 @@ function PrimaFacie() {
         </motion.div>
       )}
 
-      <div className="footer-gradient"></div>
+    
       
       {showAnalyzing && <AnalyzingAnimation />}
     </motion.div>

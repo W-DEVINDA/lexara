@@ -356,7 +356,7 @@ function PreInvestigator() {
         </motion.div>
       )}
 
-      <div className="investigator-footer-gradient"></div>
+      
       
       {showAnalyzing && <AnalyzingAnimation />}
     </motion.div>

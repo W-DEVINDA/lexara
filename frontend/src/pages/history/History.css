@@ -22,12 +22,21 @@
 }
 
 .hist-history-page::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+.hist-history-page::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+.hist-history-page::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
 }
 
 .hist-history-page {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #111111;
 }
 
 /* Header Section */

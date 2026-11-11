@@ -13,7 +13,21 @@
 }
 
 .investigator-report-container::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+.investigator-report-container::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+.investigator-report-container::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
+}
+
+.investigator-report-container {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #111111;
 }
 
 .investigator-report-container * {

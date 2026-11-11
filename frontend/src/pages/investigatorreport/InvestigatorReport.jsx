@@ -204,7 +204,7 @@ const handleNavigateHome = () => {
         </motion.div>
       </div>
 
-      <div className="investigator-report-footer-gradient"></div>
+      
       <InvChat />
     </motion.div>
   );

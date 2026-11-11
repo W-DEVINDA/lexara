@@ -413,7 +413,7 @@ function History() {
       </div>
 
       {/* Bottom Gradient */}
-      <div className="hist-bottom-gradient"></div>
+     
 
       {/* Delete Confirmation Modal */}
       {showDeleteModal && (

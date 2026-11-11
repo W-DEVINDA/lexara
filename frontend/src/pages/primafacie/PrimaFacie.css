@@ -13,7 +13,21 @@
 }
 
 .prima-facie-container::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+.prima-facie-container::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+.prima-facie-container::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
+}
+
+.prima-facie-container {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #111111;
 }
 
 /* Scrollbar Hide - Only for Prima Facie page */
