@@ -86,7 +86,6 @@
   right: 282px;
   top: 50%;
   transform: translateY(-50%);
-  transition: left 0.4s ease;
   height: 33px;
   border-radius: 11px;
   background: #FBFBFB;
@@ -95,9 +94,7 @@
   padding: 0 15px;
   gap: 10px;
 }
-.homepage.history-open .search-container {
-  left: 517px;
-}
+
 
 .search-icon {
   flex-shrink: 0;
