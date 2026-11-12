@@ -355,8 +355,8 @@
 /* Active Cases Section - Matched to Investigator Page Width */
 .hist-history-page .hist-active-cases-section {
   padding: 0 40px;
-  max-width: 1220px;
-  margin: 93px auto 0;
+    max-width: 1220px;
+  margin: 40px auto 0;
   width: 100%;
 }
 
@@ -772,7 +772,7 @@
   }
 
   .hist-history-page .hist-active-cases-section {
-    margin-top: 60px;
+    margin-top: 28px;
   }
 
   .hist-history-page .hist-completed-cases-section {

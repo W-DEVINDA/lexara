@@ -14,7 +14,7 @@ function Homepage() {
   const fromTransition = location.state?.smoothTransition;
   const [placeholderText, setPlaceholderText] = useState('Search across all ');
   const staticText = 'Search across all ';
-  const categories = ['malaysian acts', 'leading cases', 'legal researches'];
+  const categories = ['global acts', 'leading cases', 'legal researches'];
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
    const [isChatHistoryOpen, setIsChatHistoryOpen] = useState(() => window.innerWidth > 1024);
