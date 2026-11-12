@@ -7,7 +7,7 @@ import App from './App.jsx'
 // Laptop layout (1536px wide) is the reference design.
 // On wider or narrower desktop screens the whole page is scaled so it looks exactly the same.
 // Tablets and phones (1024px and below) use their own mobile layout instead.
-const DESIGN_WIDTH = 1536;const DESIGN_WIDTH = 1280;
+const DESIGN_WIDTH = 1280;
 const MOBILE_MAX = 1024;
 
 function fitToScreen() {
